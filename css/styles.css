@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background-color: #cdd8db;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-top: 240px;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 0.25rem;
+}
+
+ul {
+  padding: 1rem 0 0 1.5rem;
+}
+
+ul li {
+  padding: 0.25rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  grid-gap: 1rem;
+}
+
+header, footer {
+  background-color: #2a6979;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+footer {
+  margin-top: 1rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.page {
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: #e9ecfa;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 15px 10px 20px #658992;
+}
+
+.mePic {
+  width: 120px;
+  border-radius: 10px;
+}
+
+.verticalCenter {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.biggerText {
+  font-size: 20px;
+}
