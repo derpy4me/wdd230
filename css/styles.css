@@ -10,7 +10,6 @@ body {
   font-size: 16px;
   background-color: #cdd8db;
   font-family: Helvetica, Arial, sans-serif;
-  margin-top: 240px;
 }
 
 h1 {
@@ -59,7 +58,13 @@ footer {
 
 .page {
   max-width: 480px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  /* margin-top: 200px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -290px;
+  margin-left: -210px;
   background-color: #e9ecfa;
   padding: 1rem;
   border-radius: 20px;
