@@ -57,14 +57,9 @@ footer {
 }
 
 .page {
-  max-width: 480px;
-  /* margin: 0 auto; */
-  /* margin-top: 200px; */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -290px;
-  margin-left: -210px;
+  max-width: 360px;
+  min-width: 325px;
+  margin: 0.5rem auto;
   background-color: #e9ecfa;
   padding: 1rem;
   border-radius: 20px;
