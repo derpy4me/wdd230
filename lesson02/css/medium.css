@@ -1,0 +1,26 @@
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .thirdCard {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 24px 24px 1fr;
+  }
+
+  .thirdCard h3 {
+    grid-column: 1/3;
+  }
+
+  .thirdCard h4, .thirdCard a, .thirdCard p {
+    grid-column: 1;
+  }
+
+  .thirdCard img {
+    grid-column: 2;
+    grid-row: 2/5;
+  }
+
+}
