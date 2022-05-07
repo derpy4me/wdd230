@@ -1,0 +1,141 @@
+:root {
+  --main-color: #e8f2f3;
+  --secondary-color: #394c57;
+  --tertiary-color: #d3dedf;
+  --font-color: #30343f;
+  --display-font: "Merriweather", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  --font: "Roboto Flex", Arial, Helvetica, sans-serif;
+  --link-font: Koulen, Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: var(--display-font);
+}
+
+h1 {
+  color: var(--header-color);
+  padding: 2rem;
+  font-size: 40px;
+}
+
+h2 {
+  padding: 1rem;
+}
+
+p {
+  line-height: 1.25rem;
+}
+
+header,
+footer {
+  position: relative;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+header {
+  padding: 1rem 2rem 0 2rem;
+}
+
+footer {
+  padding: 2rem;
+}
+
+header img {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  max-width: 70px;
+  max-height: 70px;
+}
+
+body {
+  background-color: var(--tertiary-color);
+  font-family: var(--font);
+}
+
+main {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--font-color);
+  margin: 0 -2rem;
+}
+
+nav div {
+  flex: 1 1 auto;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  color: var(--main-color);
+  font-family: var(--link-font);
+  font-size: large;
+}
+
+nav a:hover {
+  background-color: var(--main-color);
+  color: var(--font-color);
+  border-bottom: 1px solid var(--secondary-color);
+  margin-bottom: -1px;
+}
+
+.page {
+  max-width: 1080px;
+  min-width: 720px;
+  background-color: var(--main-color);
+  margin: 0 auto;
+  text-align: center;
+  color: var(--font-color);
+}
+
+.infoCard {
+  margin: 1.5rem;
+  padding: 1rem;
+  background-color: var(--tertiary-color);
+  box-shadow: 5px 5px 10px var(--secondary-color);
+  overflow: hidden;
+  flex: 1 1 auto;
+  min-width: 200px;
+  max-width: 500px;
+}
+
+.infoCard h2 {
+  margin: -1rem;
+  color: var(--main-color);
+  background-color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.infoCard p {
+  text-align: left;
+}
+
+.merriweather {
+  font-family: var(--display-font);
+}
+
+.robotoFlex {
+  font-family: var(--font);
+}
+
+.koulen {
+  font-family: var(--link-font);
+}
