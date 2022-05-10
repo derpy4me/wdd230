@@ -3,7 +3,7 @@
   --secondary-color: #394c57;
   --tertiary-color: #d3dedf;
   --font-color: #30343f;
-  --display-font: "Merriweather", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  --display-font: "Merriweather", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   --font: "Roboto Flex", Arial, Helvetica, sans-serif;
   --link-font: Koulen, Arial, Helvetica, sans-serif;
 }
@@ -14,7 +14,8 @@
   box-sizing: border-box;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--display-font);
 }
 
@@ -30,6 +31,10 @@ h2 {
 
 p {
   line-height: 1.25rem;
+}
+
+li {
+  list-style: none;
 }
 
 header,
@@ -68,6 +73,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav {
@@ -114,7 +120,7 @@ nav a:hover {
   overflow: hidden;
   flex: 1 1 auto;
   min-width: 200px;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 .infoCard h2 {
@@ -138,4 +144,31 @@ nav a:hover {
 
 .koulen {
   font-family: var(--link-font);
+}
+
+.personaCard {
+  margin: 1.5rem;
+  padding: 1rem;
+  background-color: var(--tertiary-color);
+  box-shadow: 5px 5px 10px var(--secondary-color);
+  overflow: hidden;
+  flex: 1 1 auto;
+  min-width: 200px;
+  max-width: 450px;
+}
+
+.personaCard img {
+  max-width: 400px;
+  padding: 1rem;
+}
+
+.personaCard ul {
+  text-align: left;
+}
+
+.personaCard h2 {
+  margin: -1rem;
+  color: var(--main-color);
+  background-color: var(--secondary-color);
+  margin-bottom: 1rem;
 }
