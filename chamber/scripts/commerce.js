@@ -22,7 +22,7 @@ const today = new Date();
 
 const currentDay = document.querySelector(".currentDay");
 
-const fullDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(today);
+const fullDate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(today);
 
 currentDay.innerHTML = `${fullDate}`;
 
