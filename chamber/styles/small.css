@@ -1,6 +1,6 @@
 :root {
   --main-color: #e8f2f3;
-  --secondary-color: #394c57;
+  --secondary-color: #273942;
   --tertiary-color: #d3dedf;
   --font-color: #30343f;
   --display-font: "Merriweather", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -109,6 +109,7 @@ nav ul li a {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
   margin: auto 1rem;
   font-size: 26px;
+  color: white;
 }
 
 nav ul li a:hover {
@@ -119,10 +120,14 @@ h1 {
   font-size: 24px;
   padding: 0.75rem 0 0 0.75rem;
   font-family: var(--display-font);
+  color:white;
 }
 
-h1 p {
+.innerH1 {
   font-size: 14px;
+  font-family: var(--display-font);
+  padding-left: 0.75rem;
+  color: white;
 }
 
 main {
@@ -144,10 +149,11 @@ footer {
   text-align: center;
   padding-top: 0.5rem;
   font-size: 14px;
+  color: white;
 }
 
 footer a {
-  color: #000f66;
+  color: #c0e0ff;
 }
 
 footer img {
