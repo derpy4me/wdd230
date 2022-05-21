@@ -1,7 +1,6 @@
 @media only screen and (min-width: 870px) {
-
   body {
-    max-width: 1300px;
+    max-width: 1500px;
     margin: 0 auto;
   }
 
@@ -95,9 +94,10 @@
   }
 
   main {
-    grid-template-areas:  "events hero hero hero spotlights"
-                          "weather hero hero hero spotlights"
-                          "join news news news spotlights";
+    grid-template-areas:
+      "events hero hero hero spotlights"
+      "weather hero hero hero spotlights"
+      "join news news news spotlights";
   }
 
   .hero {
@@ -107,5 +107,40 @@
   .spotlights {
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  main h2 {
+    font-size: 24px;
+  }
+
+  .weather, .join, .events {
+    max-width: 320px;
+  }
+
+  .headerContent {
+    margin: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 1270px) and (min-width: 871px) {
+  main {
+    margin: auto 0;
+    grid-template-areas:
+      "hero hero"
+      "events spotlights"
+      "weather spotlights"
+      "join spotlights"
+      "news news";
+  }
+
+  .weather, .join, .events {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .headerContent {
+    margin: 1rem 2rem;
   }
 }

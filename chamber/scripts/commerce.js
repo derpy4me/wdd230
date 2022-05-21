@@ -1,14 +1,15 @@
 /**
  * When Document was last updated
  */
-const lastModifiedDate = new Date(document.lastModified);
+const today = new Date();
+const currentYear = today.getFullYear();
+const day = today.getDay();
 
+const lastModifiedDate = new Date(document.lastModified);
 const lastModifiedElement = document.getElementById("lastUpdated");
 
 lastModifiedElement.innerHTML = `Last Updated: ${lastModifiedDate.toLocaleDateString("en-US")} 
 ${lastModifiedDate.toLocaleTimeString("en-US")}`;
-
-const currentYear = new Date().getFullYear();
 
 const copyright = (document.getElementById("copyright").innerHTML = `&#169; ${currentYear}`);
 
@@ -18,7 +19,6 @@ const copyright = (document.getElementById("copyright").innerHTML = `&#169; ${cu
 /**
  * Current date
  */
-const today = new Date();
 
 const currentDay = document.querySelector(".currentDay");
 
@@ -30,12 +30,38 @@ currentDay.innerHTML = `${fullDate}`;
  * Responsive hamburger button
  */
 const mainNav = document.querySelector(".headerNav");
-const hamburger = document.querySelector('.hamburger')
+const hamburger = document.querySelector(".hamburger");
 
-hamburger.addEventListener('click', () => {mainNav.classList.toggle('responsive')}, false)
-hamburger.addEventListener('click', () => {hamburger.classList.toggle('open')}, false)
-
+hamburger.addEventListener(
+  "click",
+  () => {
+    mainNav.classList.toggle("responsive");
+  },
+  false
+);
+hamburger.addEventListener(
+  "click",
+  () => {
+    hamburger.classList.toggle("open");
+  },
+  false
+);
 
 window.onresize = () => {
   if (window.innerWidth > 870) mainNav.classList.remove("responsive");
 };
+
+/**
+ * Logic to show and hid banner
+ */
+
+const banner = document.querySelector(".banner");
+const bannerButton = document.querySelector(".bannerButton");
+
+if (day === 1 || day == 2) {
+  banner.classList.remove("hidden");
+}
+
+bannerButton.addEventListener("click", () => {
+  banner.classList.toggle("hidden");
+});

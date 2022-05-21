@@ -12,6 +12,7 @@
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     margin: auto 1rem;
     font-size: 32px;
+    padding: 0 0.5rem;
   }
 
   nav ul li.hamburger {
@@ -38,12 +39,17 @@
                           "news news news"
                           "spotlights spotlights spotlights"
                           "join join join"
-                          "events events weather";
+                          "events weather weather";
     gap: 0.5rem;
   }
 
   main div {
     margin: 0;
+  }
+
+
+  main h2 {
+    font-size: 22px;
   }
 
   .hero {
@@ -70,24 +76,15 @@
   .weather {
     grid-area: weather;
   }
-}
 
-@media only screen and (max-width: 1092px) and (min-width: 870px) {
-  nav ul li a {
-    font-size: 18px;
-    margin: auto;
-  }
-
-  .innerH1 {
-    font-size: 18px;
-  }
-}
-
-@media only screen and (min-width: 560px) {
   footer {
     display: grid;
     grid-template-columns: 120px 1fr 1fr;
     padding: 1rem;
+  }
+
+  nav ul li a {
+    padding-right: 1rem;
   }
 
   footer hr {
@@ -126,5 +123,21 @@
 
   #lastUpdated {
     padding: 0.25rem 0.75rem;
+  }
+
+  .headerContent {
+    margin: 0;
+  }
+  
+}
+
+@media only screen and (max-width: 1092px) and (min-width: 870px) {
+  nav ul li a {
+    font-size: 18px;
+    margin: auto;
+  }
+
+  .innerH1 {
+    font-size: 18px;
   }
 }

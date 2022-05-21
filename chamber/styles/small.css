@@ -1,7 +1,7 @@
 :root {
   --main-color: #e8f2f3;
   --secondary-color: #273942;
-  --tertiary-color: #d3dedf;
+  --tertiary-color: #aeb5b9;
   --font-color: #30343f;
   --display-font: "Merriweather", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   --font: "Roboto Flex", Arial, Helvetica, sans-serif;
@@ -44,7 +44,6 @@ ul {
   list-style: none;
 }
 
-
 ul.headerNav.responsive {
   border: 1px solid black;
 }
@@ -74,29 +73,26 @@ nav ul.responsive {
 .responsive .hamburger {
   text-align: right;
   margin: 1.5rem 1rem 0.5rem 0;
-  content: 'X'
+  content: "X";
 }
 
 .hamburger span:nth-child(1) {
-  display: block
+  display: block;
 }
 
-
 .hamburger span:nth-child(2) {
-  display: none
+  display: none;
 }
 
 .hamburger.open span:nth-child(2) {
-  display: block
+  display: block;
 }
-
 
 .hamburger.open span:nth-child(1) {
-  display: none
+  display: none;
 }
 
-
-.responsive li{
+.responsive li {
   display: block;
 }
 
@@ -110,6 +106,7 @@ nav ul li a {
   margin: auto 1rem;
   font-size: 26px;
   color: white;
+  padding: 0 1rem;
 }
 
 nav ul li a:hover {
@@ -120,7 +117,14 @@ h1 {
   font-size: 24px;
   padding: 0.75rem 0 0 0.75rem;
   font-family: var(--display-font);
-  color:white;
+  color: white;
+}
+
+main h2 {
+  font-family: var(--display-font);
+  color: var(--font-color);
+  font-size: 20px;
+  text-align: center;
 }
 
 .innerH1 {
@@ -131,16 +135,26 @@ h1 {
 }
 
 main {
-  padding: 0.5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
 }
 
 main div {
   margin: 0.25rem;
-  padding: 0.5rem;
+  padding: 1rem;
   min-height: 150px;
   background-color: var(--tertiary-color);
+  text-align: center;
+}
+
+main div h2 {
+  margin-bottom: 1rem;
+}
+
+main div h3,
+main div h4 {
+  font-family: var(--display-font);
 }
 
 footer {
@@ -165,6 +179,7 @@ footer img {
 footer h2 {
   font-size: 14px;
   font-family: var(--display-font);
+  color: white;
 }
 
 hr {
@@ -191,8 +206,6 @@ hr {
   background-color: var(--main-color);
   border-radius: 2rem;
 }
-
-
 
 .social svg {
   width: 28px;
@@ -240,5 +253,121 @@ hr {
 
 .spotlights div {
   border: 1px solid black;
-  height: 150px;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  min-height: auto;
+  padding: 1rem;
+  font-weight: 600;
+  background-color: #e8f2f3ad;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.bannerButton {
+  background-color: transparent;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.hero {
+  position: relative;
+  padding: 0;
+}
+
+.hero h2 {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: black;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero button {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: larger;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #2d2912da;
+  color: white;
+}
+
+.join {
+  text-align: center;
+}
+
+.join h2 {
+  border: 1px solid var(--font-color);
+  border-radius: 1rem;
+  background-color: #2d2912da;
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.events h3 {
+  margin-bottom: 0.5rem;
+}
+
+
+.weatherIcon img {
+  height: 10rem;
+  width: 12rem;
+  margin: auto 0;
+}
+
+.weatherIcon {
+  display: flex;
+}
+
+.weatherIcon h3 {
+  margin: auto;
+  font-size: 32px;
+}
+
+.weather h4 {
+  text-align: right;
+  margin-right: 1rem;
+  font-size: larger;
+}
+
+.weatherDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: fit-content;
+  text-align: right;
+  padding: 0.5rem 1rem 0 0;
+}
+
+.spotlights div{
+  height: fit-content;
+}
+
+.weatherDetails p, .spotlights p{
+  margin-top: 0.5rem;
+}
+
+.spotlights h2 {
+  margin-bottom: 0.25rem;
+}
+
+.spotlights img {
+  max-width: 200px;
 }
