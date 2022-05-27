@@ -79,7 +79,11 @@
       </div>
       <div class="hero">
         <h2>Welcome to Buffalo</h2>
-        <picture><img src="images/wdd230-org.jpg" alt="Cabin in Wyoming"></picture>
+        <picture>
+          <source srcset="images/wdd230-large.jpg" media="(min-width: 1240px)">
+          <source srcset="images/wdd230-medium.jpg" media="(min-width: 640px)">
+          <img src="images/wdd230-small.jpg" alt="Cabin in Wyoming">
+        </picture>
         <button>Join the Chamber</button>
       </div>
       <div class="news">
