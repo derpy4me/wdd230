@@ -128,6 +128,17 @@
   .headerContent {
     margin: 0;
   }
+
+  .discoverCard img {
+    border-radius: 1rem;
+    max-width: none;
+    max-height: none;
+  }
+
+  .discoverCard:hover {
+    transform: scale(105%) ;
+    animation-delay: 1s;
+  }
   
 }
 

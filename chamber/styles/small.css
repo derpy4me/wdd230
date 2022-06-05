@@ -198,7 +198,7 @@ hr {
   align-items: center;
 }
 
-.currentDay {
+.timeStuff {
   margin-top: 0.75rem;
   padding: 0.5rem;
   text-align: center;
@@ -326,7 +326,6 @@ hr {
   margin-bottom: 0.5rem;
 }
 
-
 .weatherIcon img {
   height: 10rem;
   width: 12rem;
@@ -356,11 +355,12 @@ hr {
   padding: 0.5rem 1rem 0 0;
 }
 
-.spotlights div{
+.spotlights div {
   height: fit-content;
 }
 
-.weatherDetails p, .spotlights p{
+.weatherDetails p,
+.spotlights p {
   margin-top: 0.5rem;
 }
 
@@ -370,4 +370,30 @@ hr {
 
 .spotlights img {
   max-width: 200px;
+}
+
+.discoverMain {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.discoverCard {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 632px;
+}
+
+.discoverCard h3 {
+  margin: 0.5rem;
+}
+
+.discoverCard img {
+  border-radius: 1rem;
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.discoverCard p {
+  margin: 0.5rem auto;
 }
