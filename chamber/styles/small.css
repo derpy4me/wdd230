@@ -397,3 +397,8 @@ hr {
 .discoverCard p {
   margin: 0.5rem auto;
 }
+
+.demographics {
+  display: flex;
+  min-height: fit-content;
+}

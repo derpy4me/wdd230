@@ -136,7 +136,7 @@
   }
 
   .discoverCard:hover {
-    transform: scale(105%) ;
+    transform: scale(1.05);
     animation-delay: 1s;
   }
   
