@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An example of how to build a table in html using css for stying">
+    <title>Table Structure Example</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="page">
+      <header>
+        <h1>HTML & CSS Table Example</h1>
+      </header>
+      <main>
+        <table>
+          <caption>Table 1</caption>
+          <thead>
+            <tr>
+              <th scope="colgroup" colspan="3">ACME Wildwest</th>
+            </tr>
+            <tr>
+              <th scope="col">Period</th>
+              <th scope="col">Sales</th>
+              <th scope="col">Sales Goal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">August</th>
+              <td>$3,590</td>
+              <td>$4,000</td>
+            </tr>
+            <tr>
+              <th scope="row">September</th>
+              <td>$4,420</td>
+              <td>$5,000</td>
+            </tr>
+            <tr>
+              <th scope="row">October</th>
+              <td>$4,870</td>
+              <td>$5,000</td>
+            </tr>
+            <tr>
+              <th scope="row">November</th>
+              <td>$8,610</td>
+              <td class="highlight">$7,500</td>
+            </tr>
+            <tr>
+              <th scope="row">Black Friday</th>
+              <td colspan="2">$3,200</td>
+            </tr>
+            <tr>
+              <th scope="row">December</th>
+              <td>$6,820</td>
+              <td>$7,500</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Compiled 6.9.2022 tScott</td>
+            </tr>
+          </tfoot>
+        </table>
+      </main>
+      <footer>June 09 2022 - Thomas Scott</footer>
+    </div>
+</body>
+</html>
