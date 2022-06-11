@@ -143,4 +143,19 @@
   .headerContent {
     margin: 1rem 2rem;
   }
+
+  .prettyForm {
+    width: 150%;
+    padding: 2rem;
+    padding-top: 0;
+  }
+
+  form {
+    width: 100%;
+    max-width: 30rem;
+  }
+
+  form fieldset {
+    padding: 1rem;
+  }
 }

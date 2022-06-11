@@ -61,7 +61,8 @@
               <ul class="headerNav">
                 <li class="hamburger"><span>&#9776;</span><span>X</span></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Discover</a></li>
+                <li><a href="discover.html
+                  ">Discover</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
@@ -71,69 +72,36 @@
         </div>
         <div class="timeStuff">
           <p class="currentDay"></p>
-          <p>Time since last visit: <span class="time"></span> Days</p>
         </div>
       </div>
     </header>
-    <main class="discoverMain">
+    <main>
       <div class="banner hidden">
         <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p> <button
           class="bannerButton">❌</button>
       </div>
-      <div class="discoverCard">
-        <h2>Demographics</h2>
-        <img src="images/buffaloWyoming_small.png" alt="A map to Buffalo" height="400" width="600"
-          data-src="images/buffaloWyoming.png">
-        <h3>Almost Nowhere</h3>
-        <hr />
-        <div class="demographics">
-          <p>Population: <span>4,606 (2020)</span></p>
-          <P>Elevation: <span>4,646 ft.</span></P>
-        </div>
-      </div>
-      <div class="discoverCard">
-        <h2>Buffalo Herds</h2>
-        <img src="images/herdOfBuffalo_small.jpg" alt="A herd of buffalo" height="400" width="600"
-          data-src="images/herdOfBuffalo.jpg">
-        <h3>There aren't really Buffalo Herds</h3>
-        <hr />
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores molestiae quasi omnis eius eligendi sed vel
-          similique magnam inventore magni?</p>
-      </div>
-      <div class="discoverCard">
-        <h2>Everyone Rides Horses</h2>
-        <img src="images/horses_small.jpg" alt="Some people riding horses" height="400" width="600"
-          data-src="images/horses.jpg">
-        <h3>Even through the Drive Through</h3>
-        <hr />
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum non beatae laborum sit impedit iure vero
-          veritatis? Eaque, sapiente modi.</p>
-      </div>
-      <div class="discoverCard">
-        <h2>Meet Main Street</h2>
-        <img src="images/mainSt_small.jpg" alt="Main street" height="400" width="600" data-src="images/mainSt.jpeg">
-        <h3>It's usually not too busy</h3>
-        <hr />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo id consequatur sed
-          laboriosam. Perspiciatis odit tempora itaque debitis repellendus.</p>
-      </div>
-      <div class="discoverCard">
-        <h2>The Rocky Mountains</h2>
-        <img src="images/mountains_small.jpg" alt="the rocky mountains" height="400" width="600"
-          data-src="images/mountains.jpg">
-        <h3>Such a lovely place</h3>
-        <hr />
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel repellendus mollitia, hic fugiat fugit quo
-          placeat natus sint facilis autem!</p>
-      </div>
-      <div class="discoverCard">
-        <h2>Occidental Hotel</h2>
-        <img src="images/occidental_small.jpg" alt="the occidental hotel" height="400" width="600"
-          data-src="images/occidental.jpg">
-        <h3>It's an Antique</h3>
-        <hr />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum deleniti voluptates unde nobis
-          aperiam tempore fuga at doloribus odit.</p>
+      <div class="prettyForm">
+        <form action="thankyou.html" method="get">
+          <fieldset>
+            <legend>Applicant Information</legend>
+            <label class="topDown">First Name* <input type="text" name="fname" required></label>
+            <label class="topDown">Last Name* <input type="text" name="lname" required></label>
+            <label class="topDown">Email* <input type="text" name="email" placeholder="someone@email.com" required></label>
+            <label class="topDown">Phone* <input type="tel" name="phone" placeholder="4355556666"></label>
+            <label class="topDown">Business* <input type="text" name="business" required></label>
+            <label class="topDown">Position Title <input type="text" name="positionTitle"></label>
+            <label class="topDown">Business Description <input type="textarea" name="description"></label>
+          </fieldset>
+          <fieldset>
+            <legend>Membership Levels</legend>
+            <label class="radios"><input type="radio" name="membership" value="nonProfit"> Non Profit</label>
+            <label class="radios"><input type="radio" name="membership" value="bronze"> Bronze</label>
+            <label class="radios"><input type="radio" name="membership" value="silver"> Silver</label>
+            <label class="radios"><input type="radio" name="membership" value="gold"> Gold</label>
+          </fieldset>
+          <input type="datetime" name="submissionDate" hidden>
+          <input type="submit" value="Become A Member" class="Submit">
+        </form>
       </div>
     </main>
     <footer>
@@ -162,7 +130,7 @@
     </footer>
   </div>
   <script src="scripts/commerce.js"></script>
-  <script src="scripts/sinceLastVisit.js"></script>
+  <script src="scripts/join.js"></script>
 </body>
 
 </html>

@@ -402,3 +402,59 @@ hr {
   display: flex;
   min-height: fit-content;
 }
+
+form {
+  text-align: left;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #445;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+
+form legend {
+  color: var(--secondary-color);
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+
+form label {
+  display: block;
+  padding-top: 1rem;
+  color: var(--font-color);
+  font-size: 0.9rem;
+}
+
+form label.topDown input {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 5px;
+  padding: 1rem;
+  color: #555;
+  width: 100%;
+  max-width: 25rem;
+  background-color: #00000023;
+}
+
+form label.radios {
+  display: block;
+  padding: 0.75rem 0;
+  font-size: 1.1rem;
+}
+
+
+form input.Submit {
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: larger;
+  font-weight: 700;
+  width: 100%;
+  cursor: pointer;
+}
