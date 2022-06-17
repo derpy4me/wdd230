@@ -93,7 +93,7 @@
     font-size: 16px;
   }
 
-  main {
+  .main {
     grid-template-areas:
       "events hero hero hero spotlights"
       "weather hero hero hero spotlights"
@@ -124,7 +124,7 @@
 }
 
 @media only screen and (max-width: 1270px) and (min-width: 871px) {
-  main {
+  .main {
     margin: auto 0;
     grid-template-areas:
       "hero hero"

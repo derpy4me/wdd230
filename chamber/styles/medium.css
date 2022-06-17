@@ -33,7 +33,7 @@
     flex: 1 1 auto;
   }
 
-  main {
+  .main {
     display: grid;
     grid-template-areas:  "hero hero hero"
                           "news news news"

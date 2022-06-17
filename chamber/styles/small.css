@@ -467,3 +467,17 @@ form input.Submit {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+.viewToggleBtn {
+  display: block;
+  background-color: var(--main-color);
+  text-align: right;
+  min-height: max-content;
+}
+
+.viewToggleBtn input {
+  margin: 0.5rem;
+  padding: auto;
+  width: 75px;
+  height: 75px;
+}
