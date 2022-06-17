@@ -1,0 +1,85 @@
+{
+  "businesses": [
+    {
+      "name": "Kimia",
+      "address": "1 Jenifer Trail",
+      "phoneNumber": "(964) 540-1501",
+      "email": "fhabert0@naver.com",
+      "websiteUrl": "www.kimia.com",
+      "icon": "http://dummyimage.com/100x100.png/dddddd/000000",
+      "membershipLevel": 4
+    },
+    {
+      "name": "Oodoo",
+      "address": "416 Dixon Road",
+      "phoneNumber": "(326) 274-2696",
+      "email": "tstelfox1@sohu.com",
+      "websiteUrl": "www.oodoo.com",
+      "icon": "http://dummyimage.com/100x100.png/dddddd/000000",
+      "membershipLevel": 4
+    },
+    {
+      "name": "Voomm",
+      "address": "630 Hayes Trail",
+      "phoneNumber": "(180) 348-0477",
+      "email": "jstocken2@prweb.com",
+      "websiteUrl": "www.voomm.com",
+      "icon": "http://dummyimage.com/100x100.png/5fa2dd/ffffff",
+      "membershipLevel": 4
+    },
+    {
+      "name": "Bluezoom",
+      "address": "5 Eagan Way",
+      "phoneNumber": "(927) 660-0430",
+      "email": "mferran3@salon.com",
+      "websiteUrl": "www.bluezoom.com",
+      "icon": "http://dummyimage.com/100x100.png/dddddd/000000",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Jetpulse",
+      "address": "639 Buhler Alley",
+      "phoneNumber": "(787) 392-4135",
+      "email": "lnortham4@chicagotribune.com",
+      "websiteUrl": "www.jetpulse.com",
+      "icon": "http://dummyimage.com/100x100.png/ff4444/ffffff",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Feedfire",
+      "address": "0829 Shoshone Avenue",
+      "phoneNumber": "(144) 333-6563",
+      "email": "mskipsey5@arstechnica.com",
+      "websiteUrl": "www.feedfire.com",
+      "icon": "http://dummyimage.com/100x100.png/5fa2dd/ffffff",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Tagpad",
+      "address": "5 La Follette Pass",
+      "phoneNumber": "(401) 466-7858",
+      "email": "mkruschev6@godaddy.com",
+      "websiteUrl": "www.tagpad.com",
+      "icon": "http://dummyimage.com/100x100.png/cc0000/ffffff",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Photojam",
+      "address": "8920 Saint Paul Alley",
+      "phoneNumber": "(840) 897-1775",
+      "email": "oabrahamowitcz7@examiner.com",
+      "websiteUrl": "www.photojam.com",
+      "icon": "http://dummyimage.com/100x100.png/5fa2dd/ffffff",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Flashdog",
+      "address": "8439 Boyd Circle",
+      "phoneNumber": "(430) 986-0573",
+      "email": "dbelding8@yahoo.co.jp",
+      "websiteUrl": "www.flashdog.com",
+      "icon": "http://dummyimage.com/100x100.png/5fa2dd/ffffff",
+      "membershipLevel": 1
+    }
+  ]
+}

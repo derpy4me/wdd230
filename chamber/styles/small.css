@@ -462,3 +462,8 @@ form input.Submit {
   width: 100%;
   cursor: pointer;
 }
+
+.autoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
