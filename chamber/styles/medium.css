@@ -139,6 +139,17 @@
     transform: scale(1.05);
     animation-delay: 1s;
   }
+
+  .twoGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .twoGrid .spotlights{
+    grid-area: auto;
+    display: flex;
+    flex-direction: column;
+  }
   
 }
 

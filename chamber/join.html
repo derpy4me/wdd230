@@ -80,28 +80,54 @@
         <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p> <button
           class="bannerButton">❌</button>
       </div>
-      <div class="prettyForm">
-        <form action="thankyou.html" method="get">
-          <fieldset>
-            <legend>Applicant Information</legend>
-            <label class="topDown">First Name* <input type="text" name="fname" required></label>
-            <label class="topDown">Last Name* <input type="text" name="lname" required></label>
-            <label class="topDown">Email* <input type="text" name="email" placeholder="someone@email.com" required></label>
-            <label class="topDown">Phone* <input type="tel" name="phone" placeholder="4355556666"></label>
-            <label class="topDown">Business* <input type="text" name="business" required></label>
-            <label class="topDown">Position Title <input type="text" name="positionTitle"></label>
-            <label class="topDown">Business Description <input type="textarea" name="description"></label>
-          </fieldset>
-          <fieldset>
-            <legend>Membership Levels</legend>
-            <label class="radios"><input type="radio" name="membership" value="nonProfit"> Non Profit</label>
-            <label class="radios"><input type="radio" name="membership" value="bronze"> Bronze</label>
-            <label class="radios"><input type="radio" name="membership" value="silver"> Silver</label>
-            <label class="radios"><input type="radio" name="membership" value="gold"> Gold</label>
-          </fieldset>
-          <input type="datetime" name="submissionDate" hidden>
-          <input type="submit" value="Become A Member" class="Submit">
-        </form>
+      <div class="twoGrid">
+        <div class="spotlights">
+          <div>
+            <h2>Non Profit Membership</h2>
+            <hr />
+            <p>Non Profit Membership is for Non Profit Organizations. There is no fee and get basic level services
+              including basic advertising and trainings on how to stay non profit</p>
+          </div>
+          <div>
+            <h2>Bronze Membership</h2>
+            <hr />
+            <p>Bronze level members receive basic level services from the commerce, one of the main benefits is being listed in our business section.</p>
+          </div>
+          <div>
+            <h2>Silver Membership</h2>
+            <hr />
+            <p>All Bronze level benefits as well as business management training.</p>
+          </div>
+          <div>
+            <h2>Gold Membership</h2>
+            <hr />
+            <p>All Bronze and Silver benefits. Increased advertising by having the opportunity to be selected for a spotlight position. Discounts on all trainings.</p>
+          </div>
+        </div>
+        <div class="prettyForm">
+          <form action="thankyou.html" method="get">
+            <fieldset>
+              <legend>Applicant Information</legend>
+              <label class="topDown">First Name* <input type="text" name="fname" required></label>
+              <label class="topDown">Last Name* <input type="text" name="lname" required></label>
+              <label class="topDown">Email* <input type="text" name="email" placeholder="someone@email.com"
+                  required></label>
+              <label class="topDown">Phone* <input type="tel" name="phone" placeholder="4355556666"></label>
+              <label class="topDown">Business* <input type="text" name="business" required></label>
+              <label class="topDown">Position Title <input type="text" name="positionTitle"></label>
+              <label class="topDown">Business Description <textarea name="description" rows="4"></textarea></label>
+            </fieldset>
+            <fieldset>
+              <legend>Membership Levels</legend>
+              <label class="radios"><input type="radio" name="membership" value="nonProfit"> Non Profit</label>
+              <label class="radios"><input type="radio" name="membership" value="bronze"> Bronze</label>
+              <label class="radios"><input type="radio" name="membership" value="silver"> Silver</label>
+              <label class="radios"><input type="radio" name="membership" value="gold"> Gold</label>
+            </fieldset>
+            <input type="datetime-local" name="submissionDate" hidden>
+            <input type="submit" value="Become A Member" class="Submit">
+          </form>
+        </div>
       </div>
     </main>
     <footer>
