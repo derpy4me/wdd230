@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  padding: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #d9e97f;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #d9e97f;
+}
+
+.page {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 2rem;
+}
+
+.prophetCard {
+  background-color: aliceblue;
+  border: 1px solid #cbd4db;
+  margin: 1rem auto;
+  max-width: 410px;
+}
+
+.prophetCard h2 {
+  padding: 1.5rem 0 0.5rem 0;
+}
+
+.prophetCard img {
+  margin: 1rem 2rem;
+}
+
+.prophetCard p {
+  margin: 0.5rem;
+}
