@@ -2,13 +2,13 @@ const apiUrl = "scripts/mockData.json";
 const directory = document.querySelector(".spotlights");
 
 const buildBusinesses = (businesses) => {
-  console.log(businesses);
+  // console.log(businesses);S
   businesses.forEach((business) => {
     let card = document.createElement("div");
     let h2 = document.createElement("h2");
     let address = document.createElement("p");
     let phone = document.createElement("p");
-    let webUrl = document.createElement("p");
+    let webUrl = document.createElement("a");
     let icon = document.createElement("img");
 
     h2.innerHTML = business.name;
@@ -39,3 +39,23 @@ async function getBusinesses() {
 }
 
 getBusinesses();
+
+const gridButton = document.querySelector(".gridButton");
+const listButton = document.querySelector(".listButton");
+
+const showGrid = () => {
+  directory.classList.remove("autoList");
+  directory.classList.add("autoGrid");
+  listButton.classList.remove("buttonActive")
+  gridButton.classList.add("buttonActive");
+};
+
+const showList = () => {
+  directory.classList.remove("autoGrid");
+  directory.classList.add("autoList");
+  gridButton.classList.remove("buttonActive")
+  listButton.classList.add("buttonActive");
+};
+
+gridButton.addEventListener("click", showGrid);
+listButton.addEventListener("click", showList);

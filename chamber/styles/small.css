@@ -23,6 +23,7 @@ a {
   text-decoration: none;
   color: black;
   font-family: var(--link-font);
+  cursor: pointer;
 }
 
 header,
@@ -420,7 +421,6 @@ form legend {
   padding: 0 0.5rem;
 }
 
-
 form label {
   display: block;
   padding-top: 1rem;
@@ -428,7 +428,8 @@ form label {
   font-size: 0.9rem;
 }
 
-form label.topDown input, form label.topDown textarea {
+form label.topDown input,
+form label.topDown textarea {
   display: block;
   font-size: 1rem;
   border: solid 1px #999;
@@ -450,7 +451,6 @@ form label.radios {
   font-size: 1.1rem;
 }
 
-
 form input.Submit {
   border: none;
   background-color: var(--secondary-color);
@@ -471,13 +471,40 @@ form input.Submit {
 .viewToggleBtn {
   display: block;
   background-color: var(--main-color);
-  text-align: right;
   min-height: max-content;
 }
 
-.viewToggleBtn input {
+.viewToggleBtn button {
   margin: 0.5rem;
   padding: auto;
   width: 75px;
   height: 75px;
+  border-radius: 10px;
+  border: 1px solid var(--font-color);
+  background-color: var(--tertiary-color);
+}
+
+.autoList div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  min-height: fit-content;
+}
+
+.autoList div img, .autoList div hr {
+  display: none
+}
+
+.autoList div h2 {
+  text-align: left;
+}
+
+.autoList div h2,
+.autoList div p,
+.autoList div a {
+  font-size: smaller;
+}
+
+.viewToggleBtn .buttonActive {
+  background-color: #0000007c;
 }

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 560px){
+@media only screen and (min-width: 560px) {
   .innerH1 {
     font-size: 18px;
   }
@@ -35,18 +35,18 @@
 
   .main {
     display: grid;
-    grid-template-areas:  "hero hero hero"
-                          "news news news"
-                          "spotlights spotlights spotlights"
-                          "join join join"
-                          "events weather weather";
+    grid-template-areas:
+      "hero hero hero"
+      "news news news"
+      "spotlights spotlights spotlights"
+      "join join join"
+      "events weather weather";
     gap: 0.5rem;
   }
 
   main div {
     margin: 0;
   }
-
 
   main h2 {
     font-size: 22px;
@@ -90,18 +90,19 @@
   footer hr {
     grid-column: 1/4;
     margin: 1rem -1rem 0.5rem -1rem;
-
   }
 
-  .contactInfo, .address {
+  .contactInfo,
+  .address {
     margin: auto 0;
   }
 
-  .contactInfo p, .contactInfo a{
+  .contactInfo p,
+  .contactInfo a {
     padding: 0;
   }
 
-  .address{
+  .address {
     text-align: left;
   }
 
@@ -112,7 +113,7 @@
     flex-direction: column;
   }
 
-  .footerDetails div{
+  .footerDetails div {
     display: flex;
     justify-content: center;
   }
@@ -140,17 +141,41 @@
     animation-delay: 1s;
   }
 
-  .twoGrid{
+  .twoGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .twoGrid .spotlights{
+  .twoGrid .spotlights {
     grid-area: auto;
     display: flex;
     flex-direction: column;
   }
-  
+
+  .autoList {
+    flex-direction: column;
+    text-align: left;
+    align-content: left;
+  }
+
+  .autoList div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin: auto;
+    min-width: 490px;
+  }
+
+  .autoList div hr {
+    display: none;
+  }
+
+  .autoList div h2,
+  .autoList div p,
+  .autoList div a {
+    margin: 0.5rem;
+  }
 }
 
 @media only screen and (max-width: 1092px) and (min-width: 870px) {
