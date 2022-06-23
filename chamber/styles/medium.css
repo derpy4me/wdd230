@@ -155,7 +155,6 @@
   .autoList {
     flex-direction: column;
     text-align: left;
-    align-content: left;
   }
 
   .autoList div {

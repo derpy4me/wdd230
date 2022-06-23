@@ -16,7 +16,7 @@
       "email": "tstelfox1@sohu.com",
       "websiteUrl": "www.oodoo.com",
       "icon": "http://dummyimage.com/100x100.png/dddddd/000000",
-      "membershipLevel": 4
+      "membershipLevel": 1
     },
     {
       "name": "Voomm",
@@ -43,7 +43,7 @@
       "email": "lnortham4@chicagotribune.com",
       "websiteUrl": "www.jetpulse.com",
       "icon": "http://dummyimage.com/100x100.png/ff4444/ffffff",
-      "membershipLevel": 3
+      "membershipLevel": 2
     },
     {
       "name": "Feedfire",
@@ -70,7 +70,7 @@
       "email": "oabrahamowitcz7@examiner.com",
       "websiteUrl": "www.photojam.com",
       "icon": "http://dummyimage.com/100x100.png/5fa2dd/ffffff",
-      "membershipLevel": 1
+      "membershipLevel": 3
     },
     {
       "name": "Flashdog",
