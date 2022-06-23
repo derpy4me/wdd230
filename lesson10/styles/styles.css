@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, p {
+  padding: 0.5rem;
+}
+
+.page {
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem auto;
+  background-color: rgb(211, 219, 226);
+  max-width: max-content;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.705);
+}
+
+.verySmall {
+  font-size: xx-small;
+}
+
+#current-temp {
+  font-weight: 900;
+  font-size: 1.1em;
+}
+
+h2 {
+  margin-bottom: -1.5rem;
+}
+
+figcaption {
+  margin: -1.25rem 0 0.5rem 0;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+footer {
+  padding-top: 1rem;
+}
+
+footer p {
+  padding: 0;
+}
+
+footer hr {
+  margin-bottom: 1rem;
+}
