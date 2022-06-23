@@ -48,3 +48,7 @@ footer p {
 footer hr {
   margin-bottom: 1rem;
 }
+
+a {
+  text-decoration: none;
+}
