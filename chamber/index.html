@@ -84,9 +84,9 @@
         <div class="hero">
           <h2>Welcome to Buffalo</h2>
           <picture>
-            <source srcset="images/wdd230-large.jpg" media="(min-width: 1240px)">
-            <source srcset="images/wdd230-medium.jpg" media="(min-width: 640px)">
-            <img src="images/wdd230-small.jpg" alt="Cabin in Wyoming">
+            <source srcset="images/teton-cabin.webp" media="(min-width: 1240px)">
+            <source srcset="images/teton-cabin_med.webp" media="(min-width: 640px)">
+            <img src="images/teton-cabin_small.webp" alt="Cabin in Wyoming">
           </picture>
           <button>Join the Chamber</button>
         </div>
@@ -127,16 +127,14 @@
         <div class="weather">
           <h2>Weather</h2>
           <div class="weatherIcon">
-            <img src="images/snowing.webp" alt="">
-            <h3><span id="temp">30</span>&#730;F</h3>
+            <img src="" alt="" width="100" height="100" id="weatherIcon">
+            <h3><span id="temp"></span>&#730;F</h3>
           </div>
-          <h4>Snowing</h4>
+          <h4 id="description"></h4>
           <hr />
           <div class="weatherDetails">
             <p>Wind Speed:</p>
-            <p><span id="windSpeed">45</span> Mph</p>
-            <p>Wind Chill:</p>
-            <p><span id="windChill"></span>&#730;F</p>
+            <p><span id="windSpeed"></span> Mph</p>
           </div>
         </div>
       </div>

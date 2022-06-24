@@ -98,6 +98,7 @@
       "events hero hero hero spotlights"
       "weather hero hero hero spotlights"
       "join news news news spotlights";
+    gap: 2rem;
   }
 
   .hero {

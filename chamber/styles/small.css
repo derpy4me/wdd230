@@ -343,8 +343,7 @@ hr {
 }
 
 .weather h4 {
-  text-align: right;
-  margin-right: 1rem;
+  margin-top: -1rem;
   font-size: larger;
 }
 
