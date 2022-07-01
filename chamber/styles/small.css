@@ -24,6 +24,7 @@ a {
   color: black;
   font-family: var(--link-font);
   cursor: pointer;
+  display: inline-block;
 }
 
 header,
@@ -79,6 +80,7 @@ nav ul.responsive {
 
 .hamburger span:nth-child(1) {
   display: block;
+  filter: invert(0.9);
 }
 
 .hamburger span:nth-child(2) {
@@ -505,4 +507,9 @@ form input.Submit {
 
 .viewToggleBtn .buttonActive {
   background-color: #0000007c;
+}
+
+.verySmall {
+  padding: 0.5em;
+  font-size: small;
 }

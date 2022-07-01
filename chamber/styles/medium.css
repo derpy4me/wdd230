@@ -80,7 +80,7 @@
   footer {
     display: grid;
     grid-template-columns: 120px 1fr 1fr;
-    padding: 1rem;
+    padding: 2rem;
   }
 
   nav ul li a {
@@ -89,7 +89,11 @@
 
   footer hr {
     grid-column: 1/4;
-    margin: 1rem -1rem 0.5rem -1rem;
+    margin: 1rem -2rem 0.5rem -2rem;
+  }
+
+  .contactInfo {
+    text-align: right;
   }
 
   .contactInfo,

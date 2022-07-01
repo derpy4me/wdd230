@@ -1,6 +1,6 @@
 const temp = document.querySelector("#temp");
 const windSpeed = document.querySelector("#windSpeed");
-const windChillspan = document.querySelector("#windChill");
+const windChillSpan = document.querySelector("#windChill");
 const weatherIcon = document.querySelector("#weatherIcon");
 const weatherDiv = document.querySelector(".weather");
 const description = document.querySelector("#description");
@@ -24,7 +24,7 @@ async function fetchWeather() {
     const response = await fetch(apiUrl);
     if (response.ok) {
       const data = await response.json();
-      console.info(JSON.stringify(data, null, 2));
+      // console.info(JSON.stringify(data, null, 2));
       displayWeather(data)
     } else {
       throw Error(await response.text());
@@ -37,7 +37,7 @@ async function fetchWeather() {
 fetchWeather();
 
 function windChill(temp, windSpeed) {
-  if (temp > 50 && windSpeed < 3) {
+  if (temp > 50 || windSpeed < 3) {
     return 0
   }
   return Math.round(
