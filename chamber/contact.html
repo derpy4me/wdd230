@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Home page for the Buffalo Wyoming Chamber of commerce">
-  <title>Buffalo Chamber of Commerce Discover</title>
+  <meta name="description"
+    content="For questions regarding business in the town of Buffalo Wyoming reach out to the Chamber of Commerce">
+  <title>Contact the Buffalo Chamber of Commerce</title>
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,7 +62,8 @@
               <ul class="headerNav">
                 <li class="hamburger"><span>&#9776;</span><span>X</span></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="discover.html
+                  ">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -71,69 +73,64 @@
         </div>
         <div class="timeStuff">
           <p class="currentDay"></p>
-          <p>Time since last visit: <span class="time"></span> Days</p>
         </div>
       </div>
     </header>
-    <main class="discoverMain">
+    <main>
       <div class="banner hidden">
-        <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p> <button
-          class="bannerButton">❌</button>
+        <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+        <button class="bannerButton">❌</button>
       </div>
-      <div class="discoverCard">
-        <h2>Demographics</h2>
-        <img src="images/buffaloWyoming_small.png" alt="A map to Buffalo" height="400" width="600"
-          data-src="images/buffaloWyoming.png">
-        <h3>Almost Nowhere</h3>
-        <hr />
-        <div class="demographics">
-          <p>Population: <span>4,606 (2020)</span></p>
-          <P>Elevation: <span>4,646 ft.</span></P>
+      <a class="panLink"
+        title="Atkach24, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+        href="https://commons.wikimedia.org/wiki/File:Panorama_of_Buffalo,_Wyoming_at_the_base_of_the_Bighorn_Mountains.jpg"
+        target="_blank" class="hero">
+        <picture>
+          <source srcset="images/panorama_mountains_large.webp" media="(min-width: 800px)">
+          <source srcset="images/panorama_mountains.webp" media="(min-width: 640px)">
+          <source srcset="images/panorama_mountains_medium.webp" media="(min-width: 400px)">
+          <img src="images/panorama_mountains_small.webp"
+            alt="Panorama of Buffalo, Wyoming at the base of the Bighorn Mountains">
+        </picture>
+      </a>
+      <div class="twoGrid">
+        <h2 class="gridSpanTwo">CONTACT US</h2>
+        <div class="prettyForm">
+          <form action="thankyou.html" method="get">
+            <fieldset>
+              <legend>Applicant Information</legend>
+              <label class="topDown">First Name* <input type="text" name="fname" required></label>
+              <label class="topDown">Last Name* <input type="text" name="lname" required></label>
+              <label class="topDown">Email* <input type="text" name="email" placeholder="someone@email.com"
+                  required></label>
+              <label class="topDown">Phone <input type="tel" name="phone" placeholder="4355556666"></label>
+              <label class="topDown">Question/Concern* <textarea name="description" rows="4"
+                  required></textarea></label>
+            </fieldset>
+            <input type="datetime-local" name="submissionDate" hidden>
+            <input type="submit" value="Contact Us" class="Submit">
         </div>
-      </div>
-      <div class="discoverCard">
-        <h2>Buffalo Herds</h2>
-        <img src="images/herdOfBuffalo_small.jpg" alt="A herd of buffalo" height="400" width="600"
-          data-src="images/herdOfBuffalo.jpg">
-        <h3>There aren't really Buffalo Herds</h3>
-        <hr />
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores molestiae quasi omnis eius eligendi sed vel
-          similique magnam inventore magni?</p>
-      </div>
-      <div class="discoverCard">
-        <h2>Everyone Rides Horses</h2>
-        <img src="images/horses_small.jpg" alt="Some people riding horses" height="400" width="600"
-          data-src="images/horses.jpg">
-        <h3>Even through the Drive Through</h3>
-        <hr />
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum non beatae laborum sit impedit iure vero
-          veritatis? Eaque, sapiente modi.</p>
-      </div>
-      <div class="discoverCard">
-        <h2>Meet Main Street</h2>
-        <img src="images/mainSt_small.jpg" alt="Main street" height="400" width="600" data-src="images/mainSt.jpeg">
-        <h3>It's usually not too busy</h3>
-        <hr />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo id consequatur sed
-          laboriosam. Perspiciatis odit tempora itaque debitis repellendus.</p>
-      </div>
-      <div class="discoverCard">
-        <h2>The Rocky Mountains</h2>
-        <img src="images/mountains_small.jpg" alt="the rocky mountains" height="400" width="600"
-          data-src="images/mountains.jpg">
-        <h3>Such a lovely place</h3>
-        <hr />
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel repellendus mollitia, hic fugiat fugit quo
-          placeat natus sint facilis autem!</p>
-      </div>
-      <div class="discoverCard">
-        <h2>Occidental Hotel</h2>
-        <img src="images/occidental_small.jpg" alt="the occidental hotel" height="400" width="600"
-          data-src="images/occidental.jpg">
-        <h3>It's an Antique</h3>
-        <hr />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum deleniti voluptates unde nobis
-          aperiam tempore fuga at doloribus odit.</p>
+        <div class="centerText">
+          <h2>Buffalo Chamber of Commerce</h2>
+          <div class="address">
+            <p>412 N Main St</p>
+            <p>Buffalo, WY 82834</p>
+          </div>
+          <div class="contactInfo">
+            <p>info@buffalocommerce.com</p>
+            <P>+(307) 620-5555</P>
+            <a
+              href="https://www.google.com/maps/place/44%C2%B020'53.5%22N+106%C2%B041'56.8%22W/@44.348202,-106.7004234,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x533578685eb40add:0x34060d1905d53f25!2sBuffalo,+WY+82834!3b1!8m2!3d44.3483072!4d-106.6989375!3m5!1s0x0:0x7502678cbab0cd86!7e2!8m2!3d44.3482016!4d-106.6991221">
+              View on Google Maps</a>
+            <picture>
+              <source srcset="images/buffaloWyoming.png" media="(min-width: 1050px)">
+              <source srcset="images/buffaloWyoming_med.png" media="(min-width: 880px)">
+              <source srcset="images/buffaloWyoming_sm_med.png" media="(min-width: 800px)">
+              <img src="images/buffaloWyoming_small.png"
+                alt="Panorama of Buffalo, Wyoming at the base of the Bighorn Mountains">
+            </picture>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
@@ -162,7 +159,8 @@
     </footer>
   </div>
   <script src="scripts/commerce.js"></script>
-  <script src="scripts/sinceLastVisit.js"></script>
+  <script src="scripts/windchill.js"></script>
+  <script src="scripts/spotlight.js"></script>
 </body>
 
 </html>

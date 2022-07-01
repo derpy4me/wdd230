@@ -92,37 +92,37 @@
     margin: 1rem -2rem 0.5rem -2rem;
   }
 
-  .contactInfo {
+  footer .contactInfo {
     text-align: right;
   }
 
-  .contactInfo,
-  .address {
+  footer .contactInfo,
+  footer .address {
     margin: auto 0;
   }
 
-  .contactInfo p,
-  .contactInfo a {
+  footer .contactInfo p,
+  footer .contactInfo a {
     padding: 0;
   }
 
-  .address {
+  footer .address {
     text-align: left;
   }
 
-  .footerDetails {
+  footer .footerDetails {
     grid-column: 1/4;
     text-align: center;
     display: flex;
     flex-direction: column;
   }
 
-  .footerDetails div {
+  footer .footerDetails div {
     display: flex;
     justify-content: center;
   }
 
-  .footerDetails div p {
+  footer .footerDetails div p {
     padding: 0.25rem 0.75rem;
   }
 
