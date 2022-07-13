@@ -1,0 +1,52 @@
+:root {
+  --display-font: "Playfair Display","Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --header-font: "Abril Fatface", Arial, Helvetica, sans-serif;
+  --font: Roboto, Arial, Helvetica, sans-serif;
+  --foreground: #d2fdff;
+  --background: #303c6c;
+  --head-bright: #ffe8a6;
+  /* #f4976c */
+  /* #b4dfe5 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  font-size: 16px;
+  background-color: var(--background);
+}
+
+h1 {
+  font-family: var(--display-font);
+}
+
+h2, h3, h4 {
+  font-family: var(--header-font);
+}
+
+header, footer {
+  background-color: var(--head-bright);
+  padding: 2rem;
+}
+
+main {
+  background-color: var(--foreground);
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  padding: 1rem;
+}
