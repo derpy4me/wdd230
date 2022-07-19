@@ -22,7 +22,8 @@
   <header>
     <div class="wrapper">
       <h1 class="templeInnSuites">Temple Inn <br>& Suites</h1>
-      <a href="index.html"><img class="logo" src="https://via.placeholder.com/75" alt="A logo soon" width="75" height="75"></a>
+      <a href="index.html"><img class="logo" src="https://via.placeholder.com/75" alt="A logo soon" width="75"
+          height="75"></a>
       <div class="hamburger"><span>&#9776;</span></div>
       <div class="navSlider">
         <nav>
@@ -64,7 +65,32 @@
     </div>
   </header>
   <main>
-    content
+    <h2 class="textCenter textSizeX2">Reservations</h2>
+    <div>
+      <form action="thankyou.html" method="get">
+        <fieldset>
+          <legend>Reservation Request</legend>
+          <label class="topDown">Location* <input type="text" name="location" placeholder="Bethesda" required></label>
+          <label class="topDown">Date* <input type="date" name="date" required></label>
+          <label class="topDown">Number of Rooms* <input type="number" name="numRooms" required></label>
+          <label class="topDown">Type of Room* <input type="text" name="typeRooms" placeholder="Max Suite"
+              required></label>
+        </fieldset>
+        <fieldset>
+          <legend>Customer Information</legend>
+          <label class="topDown">Full Name* <input type="text" name="fname" required></label>
+          <label class="topDown">Email* <input type="email" name="email" placeholder="someone@email.com"
+              required></label>
+          <label class="topDown">Phone Number* <input type="tel" name="phoneNumber" placeholder="4445556666"
+              required></label>
+          <label class="topDown">Home State or Country* <input type="text" name="state" placeholder="Alaska"
+              required></label>
+          <label class="topDown">Special Accommodations or Requests<textarea name="description"
+              rows="4"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Make A Reservation">
+      </form>
+    </div>
   </main>
   <footer>
     <div class="footerWrapper">

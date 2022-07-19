@@ -6,6 +6,7 @@
   --background: #303c6c;
   --head-bright: #ffffff;
   --header-color: #c6883e;
+  --header-dark: #8d5510;
 }
 
 * {
@@ -33,6 +34,7 @@ h2,
 h3,
 h4 {
   font-family: var(--header-font);
+  margin-bottom: 1rem;
 }
 
 a {
@@ -53,8 +55,54 @@ hr {
   border: 1px solid var(--header-color);
 }
 
+button, input[type="submit"] {
+  padding: 0.5rem 1rem;
+  font-family: var(--display-font);
+  font-size: large;
+  border-radius: 15px;
+  border: 2px solid var(--header-color);
+  background-color: var(--header-dark);
+  color: var(--foreground);
+  margin: 1rem 0;
+  width: 100%;
+}
+
 .templeInnSuites {
   font-family: var(--display-font);
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textSizeX2 {
+  font-size: 2em;
+}
+
+.textSize3-4 {
+  font-size: 0.75em;
+}
+
+.medGridColTwo {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.paddingOne {
+  padding: 1rem;
+}
+
+.paddingXhalf {
+  padding: 0.5rem 0;
 }
 
 /**
@@ -112,7 +160,7 @@ hr {
   justify-content: flex-end;
 }
 
-.navSlider .social a{
+.navSlider .social a {
   width: 20%;
 }
 
@@ -150,7 +198,6 @@ header {
   height: 100%;
   width: 100%;
   max-width: 900px;
-  border-bottom: 2px solid var(--header-color);
   padding: 0 2rem;
 }
 
@@ -189,6 +236,7 @@ header a {
 
 footer {
   padding: 2rem;
+  width: 100%;
 }
 
 footer .footerWrapper {
@@ -197,9 +245,7 @@ footer .footerWrapper {
   align-items: center;
   justify-content: center;
   max-width: 900px;
-  margin: 0 auto;
-  margin-top: -2rem;
-  border-top: 2px solid var(--header-color);
+  margin: -2rem auto 0 auto;
   padding-top: 1rem;
 }
 
@@ -247,6 +293,8 @@ main {
   max-width: 900px;
   margin: 0 auto;
   background-color: var(--foreground);
+  border-top: 3px solid var(--header-color);
+  border-bottom: 2px solid var(--header-color);
 }
 
 main div h2 {
@@ -257,13 +305,76 @@ main hr {
   margin: 0 -1rem;
 }
 
-main div {
-  padding: 1rem;
-}
-
 .hero {
   position: relative;
   padding: 0;
   width: calc(100% + 2rem);
   margin: -1rem 0 0-1rem;
+}
+
+/**
+* Temple card classes
+*/
+
+.cardDisplay {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.templeImage {
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  max-width: min-content;
+}
+
+.templeCard {
+  text-align: center;
+  max-width: 350px;
+  min-width: 250px;
+  border: 2px solid var(--header-color);
+  padding: 1rem 2rem;
+}
+
+.templeImage .likeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.templeCard h3 {
+  padding-bottom: 1rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.templeCard ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/**
+* Weather Classes
+*/
+
+.weather {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 0.25rem;
+}
+
+.weather img {
+  justify-content: center;
+}
+
+.weather p {
+  grid-column: 1/3;
+  width: 100%v;
 }

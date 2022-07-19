@@ -23,10 +23,6 @@ closeNav.addEventListener(
   false
 );
 
-window.onresize = () => {
-  if (window.innerWidth > 870) mainNav.classList.remove("responsive");
-};
-
 /**
  * Lazy loading of images
  */
