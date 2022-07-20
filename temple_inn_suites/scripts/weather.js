@@ -1,8 +1,10 @@
-const weatherForecast = document.querySelector(".weatherForecast");
+const weatherForecast = document.querySelector('.weatherForecast');
 
 const createForecastElement = (dataArray) => {
   dataArray.forEach((data) => {
-    const time = convertTime(data.dt).toLocaleDateString("en-US", { weekday: "long" });
+    const time = convertTime(data.dt).toLocaleDateString('en-US', {
+      weekday: 'long',
+    });
     const weatherImage = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     const element = `
     <div class="weather paddingXhalf">
@@ -12,19 +14,19 @@ const createForecastElement = (dataArray) => {
       <p class="textSmall"><strong>Temperature:</strong> ${data.temp.day} ˚F</p>
       <p class="textSmall"><strong>Humidity:</strong> ${data.humidity}%</p>
   `;
-    weatherForecast.insertAdjacentHTML("beforeend", element);
+    weatherForecast.insertAdjacentHTML('beforeend', element);
   });
 };
 
 const showAlert = (alerts) => {
-  const alertArea = document.querySelector(".weatherAlert");
+  const alertArea = document.querySelector('.weatherAlert');
   const start = convertTime(alerts.start);
   const end = convertTime(alerts.end);
-  const startDay = start.toLocaleDateString("en-US", { weekday: "long" });
-  const endDay = end.toLocaleDateString("en-US", { weekday: "long" });
+  const startDay = start.toLocaleDateString('en-US', { weekday: 'long' });
+  const endDay = end.toLocaleDateString('en-US', { weekday: 'long' });
   const startNum = start.getDate();
   const endNum = end.getDate();
-  alertArea.classList.remove("hidden");
+  alertArea.classList.remove('hidden');
   element = `
     <p><strong>${alerts.event}</strong></p>
     <p>${startDay} ${startNum} - ${endDay} ${endNum}
@@ -40,7 +42,6 @@ const convertTime = (seconds) => {
 
 const fourDayForecast = (weatherData) => {
   let forecast = [];
-  const current = weatherData.current;
   forecast.push(weatherData.daily[0]);
   forecast.push(weatherData.daily[1]);
   forecast.push(weatherData.daily[2]);
@@ -55,18 +56,18 @@ const fourDayForecast = (weatherData) => {
 
 const getWeather = () => {
   var requestOptions = {
-    method: "GET",
-    redirect: "follow",
+    method: 'GET',
+    redirect: 'follow',
   };
 
   fetch(
-    "https://api.openweathermap.org/data/2.5/onecall?appid=7f51af0e3c6ba0cbac6fd1bfa5442d4b&exclude=minutely,hourly&units=imperial&lat=8.53&lon=-80.78",
+    'https://api.openweathermap.org/data/2.5/onecall?appid=7f51af0e3c6ba0cbac6fd1bfa5442d4b&exclude=minutely,hourly&units=imperial&lat=8.53&lon=-80.78',
     requestOptions
   )
     .then((response) => response.text())
     .then((result) => JSON.parse(result))
     .then((data) => fourDayForecast(data))
-    .catch((error) => console.error("error", error));
+    .catch((error) => console.error('error', error));
 };
 
 getWeather();

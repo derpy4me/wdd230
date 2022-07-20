@@ -2,23 +2,23 @@
  * Hamburger Button responsive menu
  */
 
-const mainNav = document.querySelector(".headerNav");
-const hamburger = document.querySelector(".hamburger");
-const navSlider = document.querySelector(".navSlider");
-const closeNav = document.querySelector(".closeNav");
+const mainNav = document.querySelector('.headerNav');
+const hamburger = document.querySelector('.hamburger');
+const navSlider = document.querySelector('.navSlider');
+const closeNav = document.querySelector('.closeNav');
 
 hamburger.addEventListener(
-  "click",
+  'click',
   () => {
-    navSlider.classList.add("open");
+    navSlider.classList.add('open');
   },
   false
 );
 
 closeNav.addEventListener(
-  "click",
+  'click',
   () => {
-    navSlider.classList.remove("open");
+    navSlider.classList.remove('open');
   },
   false
 );
@@ -27,16 +27,16 @@ closeNav.addEventListener(
  * Lazy loading of images
  */
 
-const imagesToLoad = document.querySelectorAll("img[data-src]");
+const imagesToLoad = document.querySelectorAll('img[data-src]');
 
 const loadImages = (image) => {
-  image.setAttribute("src", image.getAttribute("data-src"));
+  image.setAttribute('src', image.getAttribute('data-src'));
   image.onload = () => {
-    image.removeAttribute("data-src");
+    image.removeAttribute('data-src');
   };
 };
 
-if ("IntersectionObserver" in window) {
+if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver((items, observer) => {
     items.forEach((item) => {
       if (item.isIntersecting) {
@@ -62,10 +62,14 @@ if ("IntersectionObserver" in window) {
 
 // Showing the last modified date of web page
 const lastModifiedDate = new Date(document.lastModified);
-const lastModifiedElement = document.querySelector("#lastUpdated");
-lastModifiedElement.innerHTML = `Last Updated: ${lastModifiedDate.toLocaleDateString("en-US")}`;
+const lastModifiedElement = document.querySelector('#lastUpdated');
+lastModifiedElement.innerHTML = `Last Updated: ${lastModifiedDate.toLocaleDateString(
+  'en-US'
+)}`;
 
 // Showing the current year for copyright
 const today = new Date();
 const currentYear = today.getFullYear();
-const copyright = (document.querySelector("#copyright").innerHTML = `&#169; ${currentYear}`);
+const copyright = (document.querySelector(
+  '#copyright'
+).innerHTML = `&#169; ${currentYear}`);

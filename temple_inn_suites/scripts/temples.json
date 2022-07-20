@@ -2,39 +2,54 @@
   "temples": [
     {
       "name": "Lisbon Portugal Temple",
-      "address": "Avenida Dom João II, Lote 4.73.01\nParque Das Nacoes\n1998 - 014 Lisboa, Portugal",
+      "address": "Avenida Dom João II, Lote 4.73.01<br>Parque Das Nacoes<br>1998 - 014 Lisboa, Portugal",
       "phone": "(351)308-811-650",
       "email": "lisbonTemple@temple.org",
-      "services": ["No clothing rental", "No cafeteria", "No patron housing", "No distribution center"],
+      "image": "https://assets.ldscdn.org/67/45/6745da5de174c508b89c6df07f7aa177d773aec6/lisbon_portugal_temple.jpeg",
+      "services": [
+        "No clothing rental",
+        "No cafeteria",
+        "No patron housing",
+        "No distribution center"
+      ],
       "history": {
         "Announced": "2 October 2010",
         "Groundbreaking": "5 December 2015",
         "Dedicated": "15 September 2019"
       },
-      "ord_schedule": null,
-      "sess_schedule": null,
+      "ord_schedule": "By Appointment",
+      "sess_schedule": "By Appointment",
       "closed": {
         "2022": [
           "Monday, 26 September 2022 - Monday, 10 October 2022",
           "Saturday, 24 December 2022",
           "Saturday, 31 December 2022"
         ],
-        "2023": ["Monday, 13 March 2023 - Monday, 27 March 2023", "Monday, 25 September 2023 - Monday, 9 October 2023"]
+        "2023": [
+          "Monday, 13 March 2023 - Monday, 27 March 2023",
+          "Monday, 25 September 2023 - Monday, 9 October 2023"
+        ]
       }
     },
     {
       "name": "Manila Philippines Temple",
-      "address": "13 Temple Drive corner Whiteplains Avenue\nGreenmeadows Subdivision, UGONG NORTE,\n Quezon City, 1110 Metro Manila, Philippines",
+      "address": "13 Temple Drive corner Whiteplains Avenue<br>Greenmeadows Subdivision, UGONG NORTE,<br>Quezon City, 1110 Metro Manila, Philippines",
       "phone": "(63) 2-8635-9111",
       "email": "manilaTemple@temple.org",
-      "services": ["Clothing rental", "No cafeteria", "Patron housing", "Distribution center"],
+      "image": "https://assets.ldscdn.org/f7/ba/f7baa3240bcbf4fa4e6efb3f8bddf2431e8f6f53/manila_philippines_temple_lds.jpeg",
+      "services": [
+        "Clothing rental",
+        "No cafeteria",
+        "Patron housing",
+        "Distribution center"
+      ],
       "history": {
         "Announced": "1 April 1981",
         "Groundbreaking": "25 August 1982",
         "Dedicated": "25 September 1984"
       },
-      "ord_schedule": null,
-      "sess_schedule": null,
+      "ord_schedule": "By Appointment",
+      "sess_schedule": "By Appointment",
       "closed": {
         "2022": [
           "Monday, 1 August 2022 - Monday, 15 August 2022",
@@ -45,26 +60,71 @@
       }
     },
     {
-      "name": "",
-      "address": "",
-      "phone": "",
-      "email": "",
-      "services": [],
-      "history": "",
-      "ord_schedule": "",
-      "sess_schedule": "",
-      "closed": ""
+      "name": "London England Temple",
+      "address": "West Park Road<br>Newchapel<br>Surrey, England RH7 6HW, United Kingdom",
+      "phone": "(44) 1342 831-400",
+      "email": "londonTemple@@temple.com",
+      "image": "https://assets.ldscdn.org/76/80/7680492b575cfa171e6b6946930505bf57acc324/london_england_temple_lds.jpeg",
+      "services": [
+        "Clothing rental",
+        "No cafeteria",
+        "Patron housing",
+        "Distribution center"
+      ],
+      "history": {
+        "Announced": "10 August 1953",
+        "Groundbreaking": "27 August 1955",
+        "Dedicated": "7 September 1958",
+        "Rededicated": "18 October 1992"
+      },
+      "ord_schedule": "By Appointment",
+      "sess_schedule": "By Appointment",
+      "closed": {
+        "2022": [
+          "Monday, 19 September 2022 - Monday, 3 October 2022",
+          "Friday, 23 December 2022 - Tuesday, 27 December 2022",
+          "Friday, 30 December 2022 - Monday, 2 January 2023"
+        ],
+        "2023": [
+          "Monday, 27 March 2023 - Monday, 10 April 2023",
+          "Monday, 2 October 2023 - Monday, 16 October 2023"
+        ]
+      }
     },
     {
-      "name": "",
-      "address": "",
-      "phone": "",
-      "email": "",
-      "services": [],
-      "history": "",
-      "ord_schedule": "",
-      "sess_schedule": "",
-      "closed": ""
+      "name": "Oquirrh Mountain Utah Temple",
+      "address": "11022 S 4000 W<br>South Jordan UT 84009-5797<br>United States",
+      "phone": "(1) 801-878-3800",
+      "email": "Oquirrh@temple.org",
+      "image": "https://assets.ldscdn.org/77/4f/774f66bcc3658c51873db8942646f6fd1e448bea/oquirrh_mountain_utah_temple.jpeg",
+      "services": [
+        "Clothing rental",
+        "No cafeteria",
+        "No patron housing",
+        "Distribution center"
+      ],
+      "history": {
+        "Announced": "1 October 2005",
+        "Groundbreaking": "16 December 2006",
+        "Dedicated": "21 August 2009"
+      },
+      "ord_schedule": "By Appointment",
+      "sess_schedule": "By Appointment",
+      "closed": {
+        "2022": [
+          "Saturday, 23 July 2022",
+          "Monday, 12 September 2022 - Monday, 26 September 2022",
+          "Saturday, 1 October 2022",
+          "Wednesday, 23 November 2022 (Limited Operations)",
+          "Thursday, 24 November 2022",
+          "Saturday, 24 December 2022",
+          "Saturday, 31 December 2022"
+        ],
+        "2023": [
+          "Monday, 13 March 2023 - Monday, 27 March 2023",
+          "Monday, 11 September 2023 - Monday, 25 September 2023"
+        ]
+      }
     }
   ]
 }
