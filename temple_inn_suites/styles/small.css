@@ -113,6 +113,10 @@ input[type="submit"] {
     padding: 0.5rem 0;
 }
 
+.hidden {
+    display: none;
+}
+
 /**
 *Media Queries
 */
@@ -386,8 +390,8 @@ main hr {
 
 .weather {
     display: grid;
-    grid-template-columns: 50px 1fr;
-    gap: 0.25rem;
+    grid-template-columns: 60px 1fr;
+    /* gap: 0.25rem; */
 }
 
 .weather h3 {
@@ -398,11 +402,14 @@ main hr {
 
 .weather img {
     justify-content: center;
+    grid-row: 2/5;
+    background-color: #bbc8fd;
+    border-radius: 50%;
 }
 
 .weather p {
     width: 100%;
-    padding-top: 1rem;
+    padding-top: 0;
 }
 
 .weatherAlert {
@@ -416,6 +423,7 @@ main hr {
     border: 1px solid var(--header-color);
     width: 100%;
     border-radius: 1rem;
+    text-align: center;
 }
 
 /**

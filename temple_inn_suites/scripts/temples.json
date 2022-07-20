@@ -1,0 +1,70 @@
+{
+  "temples": [
+    {
+      "name": "Lisbon Portugal Temple",
+      "address": "Avenida Dom João II, Lote 4.73.01\nParque Das Nacoes\n1998 - 014 Lisboa, Portugal",
+      "phone": "(351)308-811-650",
+      "email": "lisbonTemple@temple.org",
+      "services": ["No clothing rental", "No cafeteria", "No patron housing", "No distribution center"],
+      "history": {
+        "Announced": "2 October 2010",
+        "Groundbreaking": "5 December 2015",
+        "Dedicated": "15 September 2019"
+      },
+      "ord_schedule": null,
+      "sess_schedule": null,
+      "closed": {
+        "2022": [
+          "Monday, 26 September 2022 - Monday, 10 October 2022",
+          "Saturday, 24 December 2022",
+          "Saturday, 31 December 2022"
+        ],
+        "2023": ["Monday, 13 March 2023 - Monday, 27 March 2023", "Monday, 25 September 2023 - Monday, 9 October 2023"]
+      }
+    },
+    {
+      "name": "Manila Philippines Temple",
+      "address": "13 Temple Drive corner Whiteplains Avenue\nGreenmeadows Subdivision, UGONG NORTE,\n Quezon City, 1110 Metro Manila, Philippines",
+      "phone": "(63) 2-8635-9111",
+      "email": "manilaTemple@temple.org",
+      "services": ["Clothing rental", "No cafeteria", "Patron housing", "Distribution center"],
+      "history": {
+        "Announced": "1 April 1981",
+        "Groundbreaking": "25 August 1982",
+        "Dedicated": "25 September 1984"
+      },
+      "ord_schedule": null,
+      "sess_schedule": null,
+      "closed": {
+        "2022": [
+          "Monday, 1 August 2022 - Monday, 15 August 2022",
+          "Saturday, 8 October 2022",
+          "Saturday, 24 December 2022",
+          "Saturday, 31 December 2022"
+        ]
+      }
+    },
+    {
+      "name": "",
+      "address": "",
+      "phone": "",
+      "email": "",
+      "services": [],
+      "history": "",
+      "ord_schedule": "",
+      "sess_schedule": "",
+      "closed": ""
+    },
+    {
+      "name": "",
+      "address": "",
+      "phone": "",
+      "email": "",
+      "services": [],
+      "history": "",
+      "ord_schedule": "",
+      "sess_schedule": "",
+      "closed": ""
+    }
+  ]
+}
