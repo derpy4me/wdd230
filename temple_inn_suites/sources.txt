@@ -2,3 +2,4 @@ Bethesda map image: Google Maps; https://www.google.com/maps
 Heart SVG: https://www.svgrepo.com/
 Temple images: https://www.churchofjesuschrist.org/temples/list?lang=eng
 Weather API: https://openweathermap.org/api/one-call-api
+Temple logo: <a href='https://pngtree.com/so/building'>building png from pngtree.com/</a>

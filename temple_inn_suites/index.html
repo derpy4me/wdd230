@@ -22,7 +22,7 @@
   <header>
     <div class="wrapper">
       <h1 class="templeInnSuites">Temple Inn <br>& Suites</h1>
-      <a href="index.html"><img class="logo" src="https://via.placeholder.com/75" alt="A logo soon" width="75"
+      <a href="index.html"><img class="logo" src="images/templeLogo.webp" alt="the temple logo" width="75"
           height="75"></a>
       <div class="hamburger"><span>&#9776;</span></div>
       <div class="navSlider">
@@ -67,65 +67,67 @@
   <main>
     <!-- TODO: Replace with actual image with multiple sources -->
     <picture>
-      <source srcset="https://via.placeholder.com/900x360" media="(min-width: 750px">
-      <source srcset="https://via.placeholder.com/640x200" media="(min-width: 500px">
-      <img src="https://via.placeholder.com/375x120" alt="a nice hero image" class="hero">
+      <source srcset="images/medfordTemple.webp" media="(min-width: 750px">
+      <source srcset="images/medfordTemple_med.webp" media="(min-width: 500px">
+      <img src="images/medfordTemple_sm.webp" alt="Medford Oregon Temple" class="hero">
     </picture>
-    <div class="contactUs">
-      <h2>Get In Touch</h2>
-      <div class="paddingOne">
-        <h3>Contact Information</h3>
-        <p>We will be display some nice contact information for the customer to be able to reach out to us</p>
-        <p><span class="templeInnSuites"><strong>Email:</strong></span> someone@temple.org</p>
-        <p><span class="templeInnSuites"><strong>Telephone:</strong></span> 5556667777</p>
+    <div id="mainIndex">
+      <div class="contactUs">
+        <h2>Get In Touch</h2>
+        <div class="paddingOne">
+          <h3>Contact Information</h3>
+          <p>We will be display some nice contact information for the customer to be able to reach out to us</p>
+          <p><span class="templeInnSuites"><strong>Email:</strong></span> someone@temple.org</p>
+          <p><span class="templeInnSuites"><strong>Telephone:</strong></span> 5556667777</p>
+        </div>
+        <hr>
+        <div class="paddingOne">
+          <h3>Make A Reservation</h3>
+          <p>We look forward to your visit. Click below to reserve your place at our lovely Inn.</p>
+          <button onclick="location.href = './reservations.html'">Make a Reservation</button>
+        </div>
       </div>
       <hr>
-      <div class="paddingOne">
-        <h3>Make A Reservation</h3>
-        <p>We look forward to your visit. Click below to reserve your place at our lovely Inn.</p>
-        <button onclick="location.href = './reservations.html'">Make a Reservation</button>
+      <div id="templeOfDay" class="textCenter paddingOne">
+        <h2>Temple of the Day</h2>
+        <div class="templeDetails">
+          <img src="images/panama_temple.jpeg" alt="#" width="275">
+          <h3>Panama City Temple</h3>
+          <p class="textLeft templeInnSuites">Calle Rufina Alfaro #3172</p>
+          <p class="textLeft templeInnSuites">Hacia La Villa de Cardenas</p>
+          <p class="textLeft templeInnSuites">Corozal, Ancon, Provincia de Panamá,</p>
+          <p class="textLeft templeInnSuites">Panama</p>
+        </div>
+        <div class="contactInfo">
+          <h3>Contact Information</h3>
+          <p class="textLeft"><span class="templeInnSuites"><strong>Email:</strong></span> someone@temple.org</p>
+          <p class="textLeft"><span class="templeInnSuites"><strong>Telephone:</strong></span> 5556667777</p>
+        </div>
+        <div class="services">
+          <h3>Services</h3>
+          <p class="textLeft">No clothing rental available</p>
+          <p class="textLeft">No cafeteria available</p>
+          <p class="textLeft">Patron housing available</p>
+          <p class="textLeft">Distribution center nearby</p>
+        </div>
       </div>
-    </div>
-    <hr>
-    <div class="textCenter paddingOne">
-      <h2>Temple of the Day</h2>
-      <div>
-        <img src="images/panama_temple.jpeg" alt="#" width="275">
-        <h3>Panama City Temple</h3>
-        <p class="textLeft templeInnSuites">Calle Rufina Alfaro #3172</p>
-        <p class="textLeft templeInnSuites">Hacia La Villa de Cardenas</p>
-        <p class="textLeft templeInnSuites">Corozal, Ancon, Provincia de Panamá,</p>
-        <p class="textLeft templeInnSuites">Panama</p>
-      </div>
-      <div>
-        <h3>Contact Information</h3>
-        <p class="textLeft"><span class="templeInnSuites"><strong>Email:</strong></span> someone@temple.org</p>
-        <p class="textLeft"><span class="templeInnSuites"><strong>Telephone:</strong></span> 5556667777</p>
-      </div>
-      <div>
-        <h3>Services</h3>
-        <p class="textLeft">No clothing rental available</p>
-        <p class="textLeft">No cafeteria available</p>
-        <p class="textLeft">Patron housing available</p>
-        <p class="textLeft">Distribution center nearby</p>
-      </div>
-    </div>
-    <hr>
-    <div class="paddingOne">
-      <h2>Temple Area Weather</h2>
-      <div class="weatherAlert hidden">
-        <p class="textCenter paddingXhalf">Weather alert area</p>
-      </div>
-      <div>
-        <ul class="weatherForecast">
-        </ul>
+      <hr>
+      <div id="weatherArea" class="paddingOne">
+        <h2>Temple Area Weather</h2>
+        <div class="weatherAlert hidden">
+          <p class="textCenter paddingXhalf">Weather alert area</p>
+        </div>
+        <div>
+          <ul class="weatherForecast">
+          </ul>
+        </div>
       </div>
     </div>
   </main>
   <footer>
     <div class="footerWrapper">
       <div class="webDetails">
-        <img class="logo" src="https://via.placeholder.com/75" alt="A logo soon" width="75" height="75">
+        <img class="logo" src="images/templeLogo.webp" alt="the temple logo" width="75" height="75">
         <div>
           <h2 class="templeInnSuites">Temple Inn <br>& Suites</h2>
           <p>4800 Montgomery Ln #300,</p>
@@ -171,6 +173,7 @@
         <p id="lastUpdated"></p>
       </div>
     </div>
+    <a href="sources.txt" class="textCenter textSmall">Sources</a>
   </footer>
   <script src='scripts/core.js'></script>
   <script src="scripts/weather.js"></script>

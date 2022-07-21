@@ -1,0 +1,113 @@
+@media only screen and (min-width: 480px) {
+  .weatherForecast {
+    justify-content: center;
+  }
+
+  #templeOfDay {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  #templeOfDay h2 {
+    grid-column: 1/ -1;
+  }
+
+  #templeOfDay .templeDetails {
+    grid-row: 2/4;
+  }
+
+  #templeOfDay .services {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .contactUs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .contactUs h2 {
+    grid-column: 1/ -1;
+  }
+
+  .contactUs hr {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  footer .footerWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 1rem 0;
+  }
+
+  footer .social {
+    grid-row: 2;
+    justify-content: flex-end;
+    width: fit-content;
+  }
+
+  footer .location {
+    grid-row: 1/3;
+  }
+
+  footer .pageDetails {
+    grid-row: 4;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .pageDetails > * {
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  .weatherForecast {
+    justify-content: space-evenly;
+  }
+
+  #mainIndex {
+    display: grid;
+    grid-template-columns: 275px 1fr;
+  }
+
+  #mainIndex #weatherArea {
+    grid-column: 1 / -1;
+    border-top: 2px solid var(--header-color);
+  }
+
+  #mainIndex hr {
+    display: none;
+  }
+
+  #mainIndex .contactUs {
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid var(--header-color);
+  }
+
+  #reservationForm form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  #missionariesMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #missionariesMain hr {
+    display: none;
+  }
+
+  #missionariesMain h2,
+  #missionariesMain p {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+}
