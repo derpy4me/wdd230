@@ -46,7 +46,6 @@ const fourDayForecast = (weatherData) => {
   forecast.push(weatherData.daily[1]);
   forecast.push(weatherData.daily[2]);
   forecast.push(weatherData.daily[3]);
-  console.log(JSON.stringify(forecast, null, 2));
   createForecastElement(forecast);
 
   if (weatherData.alerts) {
@@ -67,7 +66,6 @@ const getWeather = () => {
     .then((response) => response.text())
     .then((result) => JSON.parse(result))
     .then((data) => fourDayForecast(data))
-    .catch((error) => console.error('error', error));
 };
 
 getWeather();
